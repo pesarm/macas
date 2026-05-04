@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach & Surf Villa · Praia das Maçãs · Sintra</title>
+  <meta name="description" content="3-bedroom beach villa for weekly rental in Praia das Maçãs, Sintra. 2 minutes from the beach. Pets welcome. Perfect for families and surfers.">
+  <meta property="og:title" content="Beach & Surf Villa · Praia das Maçãs, Sintra">
+  <meta property="og:description" content="3 bedrooms · 3 bathrooms · 8 guests · 2 min walk to the beach. Weekly rentals only.">
+  <meta property="og:image" content="images/photo-01.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['Playfair Display','serif'], body: ['Inter','sans-serif'] },
+          colors: {
+            ocean: { DEFAULT:'#0077b6', dark:'#023047', light:'#caf0f8' },
+            sand:  { DEFAULT:'#f4a261', dark:'#e76f51' },
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body text-slate-800 bg-white">
+
+  <!-- ── NAV ─────────────────────────────────────────────────────── -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-lg font-bold text-white drop-shadow">Villa Praia das Maçãs</a>
+      <div class="flex items-center gap-5">
+        <div class="lang-switcher flex items-center gap-1 text-sm">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="text-white/30">|</span>
+          <button class="lang-btn" data-lang="pt">PT</button>
+          <span class="text-white/30">|</span>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+        <a href="#contact" class="btn-primary text-sm" data-i18n="nav_book">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────────────────────────── -->
+  <section id="hero" class="relative min-h-screen flex items-end">
+    <div class="hero-overlay absolute inset-0"></div>
+    <img src="images/hero.jpg" alt="Villa Praia das Maçãs" class="absolute inset-0 w-full h-full object-cover -z-10" id="hero-img" onerror="this.style.display='none'">
+
+    <div class="relative z-10 max-w-6xl mx-auto px-5 pb-20 w-full animate-fadein">
+      <p class="text-sand font-semibold tracking-widest text-sm uppercase mb-3">Sintra · Portugal</p>
+      <h1 class="font-display text-5xl md:text-7xl font-bold text-white leading-tight mb-4" data-i18n="hero_title">
+        Beach & Surf Villa
+      </h1>
+      <p class="text-white/80 text-lg md:text-xl mb-8 font-light max-w-xl" data-i18n="hero_sub">
+        Weekly rentals in Praia das Maçãs — 2 minutes from the Atlantic
+      </p>
+      <div class="flex flex-wrap gap-3 mb-10">
+        <span class="badge" data-i18n="badge_beach">🏖️ 2 min to beach</span>
+        <span class="badge" data-i18n="badge_beds">🛏️ 3 bedrooms</span>
+        <span class="badge" data-i18n="badge_guests">👨‍👩‍👧 8 guests</span>
+        <span class="badge" data-i18n="badge_pets">🐾 Pets welcome</span>
+      </div>
+      <a href="#contact" class="btn-hero" data-i18n="hero_cta">Book Your Week</a>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────────────── -->
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="grid md:grid-cols-2 gap-14 items-center">
+        <div class="reveal">
+          <p class="text-ocean font-semibold tracking-widest text-xs uppercase mb-3">Praia das Maçãs · Colares</p>
+          <h2 class="font-display text-4xl font-bold text-slate-800 mb-6 leading-tight" data-i18n="about_title">
+            A Home by the Atlantic
+          </h2>
+          <p class="text-slate-600 text-lg mb-5 leading-relaxed" data-i18n="about_p1">
+            Ideally located in the small village of Praia das Maçãs (Colares, Sintra), just a 2-minute walk from the beach, typical restaurants, and everything you need for a perfect vacation.
+          </p>
+          <p class="text-slate-600 text-lg mb-7 leading-relaxed" data-i18n="about_p2">
+            A fully functional, well-equipped house with easy décor — spacious across 3 bedrooms and 3 bathrooms, with ocean views and free parking. Ideal for families with children and surf lovers.
+          </p>
+          <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-800 px-4 py-2.5 rounded-xl text-sm font-medium" data-i18n="about_badge">
+            ✦ Weekly rentals only · Families &amp; surfers welcome
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 reveal">
+          <div class="stat-card"><div class="stat-num">3</div><div class="stat-lbl" data-i18n="stat_beds">Bedrooms</div></div>
+          <div class="stat-card"><div class="stat-num">3</div><div class="stat-lbl" data-i18n="stat_baths">Bathrooms</div></div>
+          <div class="stat-card"><div class="stat-num">8</div><div class="stat-lbl" data-i18n="stat_guests">Guests max.</div></div>
+          <div class="stat-card stat-card--gold"><div class="stat-num">4.65★</div><div class="stat-lbl" data-i18n="stat_rating">Airbnb rating</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HISTORY ──────────────────────────────────────────────────── -->
+  <section id="history" class="py-24 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="text-center mb-12 reveal">
+        <p class="text-ocean font-semibold tracking-widest text-xs uppercase mb-3">Since 1884</p>
+        <h2 class="font-display text-4xl font-bold text-slate-800" data-i18n="history_title">A Street with a Story</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="history-card reveal">
+          <div class="history-year">1884</div>
+          <h3 class="font-display text-xl font-semibold text-slate-800 mb-2" data-i18n="hist1_title">The First Village</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="hist1_body">Praia das Maçãs was founded as the first seaside village on the Sintra coast. A Spanish priest, Padre António Mathias del Campo, built the very first structure — and a village was born.</p>
+        </div>
+        <div class="history-card reveal">
+          <div class="history-year">1889</div>
+          <h3 class="font-display text-xl font-semibold text-slate-800 mb-2" data-i18n="hist2_title">Portugal's National Anthem</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="hist2_body">Alfredo Keil — composer of <em>A Portuguesa</em>, Portugal's national anthem — built his summer villa here in 1889. He even had a private chapel built next door for the village's first mass.</p>
+        </div>
+        <div class="history-card reveal">
+          <div class="history-year">~1900</div>
+          <h3 class="font-display text-xl font-semibold text-slate-800 mb-2" data-i18n="hist3_title">The Prego Sandwich</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="hist3_body">Manuel Dias Prego worked as a beach attendant right here and started serving fried veal steaks in a bread roll. Portugal's most iconic sandwich — the <em>prego no pão</em> — takes its name from him.</p>
+        </div>
+        <div class="history-card reveal">
+          <div class="history-year">20th c.</div>
+          <h3 class="font-display text-xl font-semibold text-slate-800 mb-2" data-i18n="hist4_title">Eugène Lévi Avenue</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="hist4_body">The villa stands on Avenida Eugène Lévi — named after the Jewish entrepreneur who shaped Praia das Maçãs into the seaside destination it is today. The street carries his name. So does the address of this house.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ───────────────────────────────────────────────────── -->
+  <section id="gallery" class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="font-display text-4xl font-bold text-slate-800 text-center mb-12 reveal" data-i18n="gallery_title">The Villa</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--featured reveal" onclick="openLightbox(0)">
+          <img src="images/photo-01.jpg" alt="Villa exterior" loading="lazy">
+          <div class="gallery-placeholder">🏠</div>
+        </div>
+        <div class="gallery-item reveal" onclick="openLightbox(1)"><img src="images/photo-02.jpg" alt="Living room" loading="lazy"><div class="gallery-placeholder">🛋️</div></div>
+        <div class="gallery-item reveal" onclick="openLightbox(2)"><img src="images/photo-03.jpg" alt="Kitchen" loading="lazy"><div class="gallery-placeholder">🍳</div></div>
+        <div class="gallery-item reveal" onclick="openLightbox(3)"><img src="images/photo-04.jpg" alt="Bedroom 1" loading="lazy"><div class="gallery-placeholder">🛏️</div></div>
+        <div class="gallery-item reveal" onclick="openLightbox(4)"><img src="images/photo-05.jpg" alt="Bedroom 2" loading="lazy"><div class="gallery-placeholder">🛏️</div></div>
+        <div class="gallery-item reveal" onclick="openLightbox(5)"><img src="images/photo-06.jpg" alt="Bathroom" loading="lazy"><div class="gallery-placeholder">🛁</div></div>
+        <div class="gallery-item reveal" onclick="openLightbox(6)"><img src="images/photo-07.jpg" alt="Ocean view" loading="lazy"><div class="gallery-placeholder">🌊</div></div>
+        <div class="gallery-item reveal" onclick="openLightbox(7)"><img src="images/photo-08.jpg" alt="Terrace" loading="lazy"><div class="gallery-placeholder">☀️</div></div>
+        <div class="gallery-item reveal" onclick="openLightbox(8)"><img src="images/photo-09.jpg" alt="Beach nearby" loading="lazy"><div class="gallery-placeholder">🏖️</div></div>
+      </div>
+      <p class="text-center text-slate-400 text-sm mt-6" id="photos-note" style="display:none" data-i18n="gallery_note">Add your photos to the images/ folder to show the gallery.</p>
+    </div>
+  </section>
+
+  <!-- ── BEDROOMS ──────────────────────────────────────────────────── -->
+  <section id="bedrooms" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-5">
+      <h2 class="font-display text-4xl font-bold text-slate-800 text-center mb-12 reveal" data-i18n="beds_title">Where You'll Sleep</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bedroom-card reveal">
+          <div class="bedroom-icon">🛏️</div>
+          <h3 class="font-display font-semibold text-xl text-slate-800 mb-1" data-i18n="bed1_name">Bedroom 1</h3>
+          <p class="text-slate-500" data-i18n="bed1_desc">1 double bed</p>
+        </div>
+        <div class="bedroom-card reveal">
+          <div class="bedroom-icon">🛏️</div>
+          <h3 class="font-display font-semibold text-xl text-slate-800 mb-1" data-i18n="bed2_name">Bedroom 2</h3>
+          <p class="text-slate-500" data-i18n="bed2_desc">1 double bed</p>
+        </div>
+        <div class="bedroom-card reveal">
+          <div class="bedroom-icon">🛏️</div>
+          <h3 class="font-display font-semibold text-xl text-slate-800 mb-1" data-i18n="bed3_name">Bedroom 3</h3>
+          <p class="text-slate-500" data-i18n="bed3_desc">2 single beds + 2 floor mattresses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AMENITIES ─────────────────────────────────────────────────── -->
+  <section id="amenities" class="py-24 bg-ocean-dark text-white">
+    <div class="max-w-5xl mx-auto px-5">
+      <h2 class="font-display text-4xl font-bold text-center mb-12 reveal" data-i18n="amenities_title">What This Place Offers</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="amenity-card reveal"><span class="amenity-icon">🌊</span><span data-i18n="am_ocean">Ocean view</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">🏖️</span><span data-i18n="am_beach">Beachfront access</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">🚗</span><span data-i18n="am_parking">Free parking</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">🐾</span><span data-i18n="am_pets">Pets allowed</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">📶</span><span data-i18n="am_wifi">WiFi included</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">🍳</span><span data-i18n="am_kitchen">Full kitchen</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">💻</span><span data-i18n="am_workspace">Dedicated workspace</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">📺</span><span data-i18n="am_tv">TV with cable</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">🛁</span><span data-i18n="am_baths">3 bathrooms</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">🔑</span><span data-i18n="am_checkin">Easy self check-in</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">🏄</span><span data-i18n="am_surf">Near surf schools</span></div>
+        <div class="amenity-card reveal"><span class="amenity-icon">🌡️</span><span data-i18n="am_heating">Heating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── REVIEWS ───────────────────────────────────────────────────── -->
+  <section id="reviews" class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-display text-4xl font-bold text-slate-800 mb-3" data-i18n="reviews_title">What Guests Say</h2>
+        <div class="flex items-center justify-center gap-2 text-amber-500">
+          <span class="text-2xl font-bold">4.65</span>
+          <span class="text-xl">★★★★★</span>
+          <span class="text-slate-400 text-sm ml-1" data-i18n="reviews_count">20 reviews on Airbnb</span>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="review-card reveal">
+          <div class="flex justify-between items-start mb-3">
+            <div><p class="font-semibold text-slate-800">Jo</p><p class="text-slate-400 text-sm">July 2024</p></div>
+            <span class="text-amber-400 text-sm">★★★★★</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">"The location of this house is fantastic. Right next to the beach, the local cafes, bars and restaurants. The photos do not do the size and location of the property justice. Would highly recommend."</p>
+        </div>
+        <div class="review-card reveal">
+          <div class="flex justify-between items-start mb-3">
+            <div><p class="font-semibold text-slate-800">Ines</p><p class="text-slate-400 text-sm">August 2024</p></div>
+            <span class="text-amber-400 text-sm">★★★★★</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">"Casa muy cómoda por su cercanía a la playa. Pedro es un excelente anfitrión y los alrededores de la casa son muy bonitos. Repetiremos seguro."</p>
+        </div>
+        <div class="review-card reveal">
+          <div class="flex justify-between items-start mb-3">
+            <div><p class="font-semibold text-slate-800">Bou Yeon</p><p class="text-slate-400 text-sm">August 2022</p></div>
+            <span class="text-amber-400 text-sm">★★★★★</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">"We had a great time! Very spacious and well equipped. The supermarket is just 1 minute away. The beach is only 5 minutes. We can recommend the place for families. Perfect for children!"</p>
+        </div>
+        <div class="review-card reveal">
+          <div class="flex justify-between items-start mb-3">
+            <div><p class="font-semibold text-slate-800">Brian</p><p class="text-slate-400 text-sm">July 2017</p></div>
+            <span class="text-amber-400 text-sm">★★★★★</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">"Unbelievable location. Leave the house and be at the beach bar in less than a minute. One of the best beaches for kids we've seen in Portugal. Pedro is fantastic — A+ recommended."</p>
+        </div>
+      </div>
+      <p class="text-center text-slate-400 text-xs mt-8" data-i18n="reviews_source">Reviews from Airbnb</p>
+    </div>
+  </section>
+
+  <!-- ── LOCATION ──────────────────────────────────────────────────── -->
+  <section id="location" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="grid md:grid-cols-2 gap-14 items-start">
+        <div class="reveal">
+          <p class="text-ocean font-semibold tracking-widest text-xs uppercase mb-3">Colares · Sintra</p>
+          <h2 class="font-display text-4xl font-bold text-slate-800 mb-6 leading-tight" data-i18n="location_title">Where You'll Be</h2>
+          <p class="text-slate-600 text-lg mb-5 leading-relaxed" data-i18n="location_p1">
+            Praia das Maçãs is a charming seaside village on the Sintra coast, 40km west of Lisbon. The beach is perfect for families — calm in summer, with surf waves in autumn and spring.
+          </p>
+          <p class="text-slate-600 text-lg mb-5 leading-relaxed" data-i18n="location_p2">
+            Take the vintage tram to Sintra (15 min) for world-class palaces and UNESCO gardens. Drive 10 minutes to Cabo da Roca — Europe's westernmost point — or walk to the natural pools at Azenhas do Mar.
+          </p>
+          <p class="text-sm bg-ocean-light/30 border border-ocean/20 text-ocean-dark px-4 py-3 rounded-xl" data-i18n="location_tip">
+            💡 Tip: Uber and taxis are easy and affordable. Lisbon airport is 45 minutes away.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 bg-slate-100">
+            <iframe
+              src="https://maps.google.com/maps?q=Praia+das+Maçãs+Colares+Sintra+Portugal&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Map of Praia das Maçãs">
+            </iframe>
+          </div>
+          <p class="text-slate-400 text-sm mt-3 text-center">Av. Eugène Levy, 106 · Praia das Maçãs · 2705-306 Colares</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ───────────────────────────────────────────────────── -->
+  <section id="pricing" class="py-24 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-5 text-center">
+      <h2 class="font-display text-4xl font-bold text-slate-800 mb-3 reveal" data-i18n="pricing_title">Pricing</h2>
+      <p class="text-slate-400 mb-10 reveal" data-i18n="pricing_sub">Weekly stays only (Sat–Sat or Sun–Sun)</p>
+      <div class="grid md:grid-cols-2 gap-6 mb-8 reveal">
+        <div class="pricing-card">
+          <p class="text-slate-500 text-sm mb-1" data-i18n="pricing_season_low">Low season (Oct – May)</p>
+          <p class="font-display text-3xl font-bold text-ocean" data-i18n="pricing_price_low">from €XXX / week</p>
+        </div>
+        <div class="pricing-card pricing-card--highlight">
+          <p class="text-white/70 text-sm mb-1" data-i18n="pricing_season_high">High season (Jun – Sep)</p>
+          <p class="font-display text-3xl font-bold text-white" data-i18n="pricing_price_high">from €XXX / week</p>
+        </div>
+      </div>
+      <p class="text-slate-500 text-sm leading-relaxed reveal" data-i18n="pricing_note">
+        Price includes bed linen, towels, WiFi, and parking. Cleaning fee and security deposit apply. Contact us for exact pricing and availability.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────────────────────────── -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="max-w-2xl mx-auto px-5">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-display text-4xl font-bold text-slate-800 mb-3" data-i18n="contact_title">Get in Touch</h2>
+        <p class="text-slate-500" data-i18n="contact_sub">Send us a message or WhatsApp us. We reply within 24 hours.</p>
+      </div>
+
+      <!-- WhatsApp CTA -->
+      <div class="text-center mb-10 reveal">
+        <a href="https://wa.me/34647808640?text=Hi!%20I'm%20interested%20in%20booking%20the%20villa."
+           id="whatsapp-btn"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all hover:scale-105 shadow-lg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-i18n="contact_whatsapp">WhatsApp us</span>
+        </a>
+        <p class="text-slate-400 text-sm mt-3" data-i18n="contact_or">or send a message below</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form id="contact-form" name="contact" method="POST" netlify data-netlify-honeypot="bot-field" class="reveal">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <label class="form-label" data-i18n="contact_name">Your name</label>
+            <input type="text" name="name" required class="form-input" data-i18n-placeholder="contact_name">
+          </div>
+          <div>
+            <label class="form-label" data-i18n="contact_email">Email</label>
+            <input type="email" name="email" required class="form-input" data-i18n-placeholder="contact_email">
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <label class="form-label" data-i18n="contact_checkin">Check-in date</label>
+            <input type="date" name="checkin" class="form-input">
+          </div>
+          <div>
+            <label class="form-label" data-i18n="contact_checkout">Check-out date</label>
+            <input type="date" name="checkout" class="form-input">
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="form-label" data-i18n="contact_guests">Number of guests</label>
+          <select name="guests" class="form-input">
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8</option>
+          </select>
+        </div>
+        <div class="mb-6">
+          <label class="form-label" data-i18n="contact_message">Message</label>
+          <textarea name="message" rows="4" class="form-input" data-i18n-placeholder="contact_message_ph"></textarea>
+        </div>
+        <button type="submit" class="w-full btn-primary py-4 text-base" data-i18n="contact_submit">Send message</button>
+        <div id="form-success" class="hidden mt-4 text-center text-green-600 font-medium p-4 bg-green-50 rounded-xl" data-i18n="contact_thanks">
+          Thank you! We'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────── -->
+  <footer class="bg-ocean-dark text-white py-12">
+    <div class="max-w-5xl mx-auto px-5 text-center">
+      <p class="font-display text-2xl font-semibold mb-2">Villa Praia das Maçãs</p>
+      <p class="text-white/60 text-sm mb-4" data-i18n="footer_address">Av. Eugène Levy, 106 · Praia das Maçãs · 2705-306 Colares · Sintra · Portugal</p>
+      <div class="flex justify-center gap-4 mb-6 text-sm">
+        <a href="#about" class="text-white/50 hover:text-white transition-colors" data-i18n="footer_about">About</a>
+        <span class="text-white/20">·</span>
+        <a href="#gallery" class="text-white/50 hover:text-white transition-colors" data-i18n="footer_gallery">Gallery</a>
+        <span class="text-white/20">·</span>
+        <a href="#pricing" class="text-white/50 hover:text-white transition-colors" data-i18n="footer_pricing">Pricing</a>
+        <span class="text-white/20">·</span>
+        <a href="#contact" class="text-white/50 hover:text-white transition-colors" data-i18n="footer_contact">Contact</a>
+      </div>
+      <p class="text-white/30 text-xs">© <span id="year"></span> Pedro &amp; Beatriz · <span data-i18n="footer_rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <!-- ── LIGHTBOX ──────────────────────────────────────────────────── -->
+  <div id="lightbox" class="fixed inset-0 bg-black/95 z-[100] hidden items-center justify-center" role="dialog">
+    <button onclick="closeLightbox()" class="absolute top-5 right-5 text-white/70 hover:text-white text-4xl leading-none z-10">&times;</button>
+    <button onclick="prevPhoto()" class="absolute left-4 md:left-8 text-white/70 hover:text-white text-5xl leading-none">&#8249;</button>
+    <button onclick="nextPhoto()" class="absolute right-4 md:right-8 text-white/70 hover:text-white text-5xl leading-none">&#8250;</button>
+    <img id="lb-img" src="" alt="" class="max-w-[90vw] max-h-[88vh] object-contain rounded-lg shadow-2xl">
+    <p id="lb-counter" class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/50 text-sm"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
