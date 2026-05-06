@@ -102,14 +102,14 @@
   <section id="history" class="py-24 bg-slate-50">
     <div class="max-w-5xl mx-auto px-5">
       <div class="text-center mb-12 reveal">
-        <p class="text-ocean font-semibold tracking-widest text-xs uppercase mb-3">Since 1884</p>
-        <h2 class="font-display text-4xl font-bold text-slate-800" data-i18n="history_title">A Street with a Story</h2>
+        <p class="text-ocean font-semibold tracking-widest text-xs uppercase mb-3" data-i18n="history_since">This house · since 1884</p>
+        <h2 class="font-display text-4xl font-bold text-slate-800" data-i18n="history_title">A House with a Story</h2>
       </div>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="history-card reveal">
-          <div class="history-year">1884</div>
-          <h3 class="font-display text-xl font-semibold text-slate-800 mb-2" data-i18n="hist1_title">The First Village</h3>
-          <p class="text-slate-500 leading-relaxed" data-i18n="hist1_body">Praia das Maçãs was founded as the first seaside village on the Sintra coast. A Spanish priest, Padre António Mathias del Campo, built the very first structure — and a village was born.</p>
+          <div class="history-year">1884 · 2003</div>
+          <h3 class="font-display text-xl font-semibold text-slate-800 mb-2" data-i18n="hist1_title">The Priest's House</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="hist1_body">Padre António Mathias del Campo built the very first structure on the Sintra coast here in 1884, and made this his home in 1888. The house stood for over a century before being completely rebuilt in 2003 — same spirit, new bones.</p>
         </div>
         <div class="history-card reveal">
           <div class="history-year">1889</div>
@@ -278,21 +278,25 @@
     <div class="max-w-2xl mx-auto px-5 text-center">
       <h2 class="font-display text-4xl font-bold text-slate-800 mb-3 reveal" data-i18n="pricing_title">Pricing</h2>
       <p class="text-slate-400 mb-10 reveal" data-i18n="pricing_sub">Minimum 4 nights</p>
-      <div class="pricing-card max-w-sm mx-auto mb-8 reveal">
-        <div class="text-center mb-6">
-          <p class="text-slate-400 text-sm uppercase tracking-widest mb-1" data-i18n="pricing_per_night">per night</p>
-          <p class="font-display text-6xl font-bold text-ocean leading-none">€350</p>
+      <div class="grid md:grid-cols-3 gap-5 mb-6 reveal">
+        <div class="pricing-card text-center">
+          <p class="text-slate-400 text-xs uppercase tracking-widest mb-2" data-i18n="pricing_per_night">per night</p>
+          <p class="font-display text-5xl font-bold text-ocean leading-none">€350</p>
         </div>
-        <div class="border-t border-slate-100 pt-5 space-y-3 text-sm">
-          <div class="flex justify-between items-center">
-            <span class="text-slate-500" data-i18n="pricing_cleaning">Cleaning fee (one-time)</span>
-            <span class="font-semibold text-slate-700">€120</span>
-          </div>
-          <div class="flex justify-between items-center">
-            <span class="text-slate-500" data-i18n="pricing_min_stay">Minimum stay</span>
-            <span class="font-semibold text-slate-700" data-i18n="pricing_min_nights">4 nights</span>
-          </div>
+        <div class="pricing-card text-center">
+          <p class="text-slate-400 text-xs uppercase tracking-widest mb-2" data-i18n="pricing_1week">1 week</p>
+          <p class="font-display text-5xl font-bold text-ocean leading-none">€2,450</p>
+          <p class="text-slate-400 text-xs mt-2">7 <span data-i18n="pricing_nights">nights</span></p>
         </div>
+        <div class="pricing-card pricing-card--highlight text-center">
+          <p class="text-white/60 text-xs uppercase tracking-widest mb-2" data-i18n="pricing_2weeks">2 weeks</p>
+          <p class="font-display text-5xl font-bold text-white leading-none">€4,900</p>
+          <p class="text-white/50 text-xs mt-2">14 <span data-i18n="pricing_nights_white">nights</span></p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500 mb-8 reveal">
+        <span>+ <span data-i18n="pricing_cleaning">Cleaning fee (one-time)</span>: <strong class="text-slate-700">€120</strong></span>
+        <span><span data-i18n="pricing_min_stay">Minimum stay</span>: <strong class="text-slate-700" data-i18n="pricing_min_nights">4 nights</strong></span>
       </div>
       <p class="text-slate-500 text-sm leading-relaxed reveal" data-i18n="pricing_note">
         Price includes bed linen, towels, WiFi, and parking. Contact us to check availability and confirm your dates.
